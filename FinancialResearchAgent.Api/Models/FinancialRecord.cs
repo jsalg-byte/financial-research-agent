@@ -1,4 +1,4 @@
-namespace FinancialResearchAgent.Proj.Models;
+namespace FinancialResearchAgent.Api.Models;
 
 public class FinancialRecord
 {

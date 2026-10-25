@@ -88,11 +88,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mzootfb/Sites/csharp/ApiProj/FinancialResearchAgent.Api/FinancialResearchAgent.Api.csproj",
+      "projectUniqueName": "/Users/mzootfb/Sites/csharp/FinancialResearchAgent/FinancialResearchAgent.Api/FinancialResearchAgent.Api.csproj",
       "projectName": "FinancialResearchAgent.Api",
-      "projectPath": "/Users/mzootfb/Sites/csharp/ApiProj/FinancialResearchAgent.Api/FinancialResearchAgent.Api.csproj",
+      "projectPath": "/Users/mzootfb/Sites/csharp/FinancialResearchAgent/FinancialResearchAgent.Api/FinancialResearchAgent.Api.csproj",
       "packagesPath": "/Users/mzootfb/.nuget/packages/",
-      "outputPath": "/Users/mzootfb/Sites/csharp/ApiProj/FinancialResearchAgent.Api/obj/",
+      "outputPath": "/Users/mzootfb/Sites/csharp/FinancialResearchAgent/FinancialResearchAgent.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mzootfb/.nuget/NuGet/NuGet.Config"
