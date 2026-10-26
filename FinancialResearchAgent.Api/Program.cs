@@ -1,4 +1,5 @@
 using FinancialResearchAgent.Api.Models;
+using FinancialResearchAgent.Api.Repositories;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+//add the repository as a service
+builder.Services.AddSingleton<IFinancialRecordRepository, InMemoryFinancialRecordRepository>();
 
 var app = builder.Build();
 
@@ -22,6 +25,13 @@ app.UseAuthorization();
 app.MapControllers();
 
 //minimal endpoints
+//
+//basic index route
+app.MapGet("/", (IFinancialRecordRepository repository) => {
+      return repository.GetAll();
+    });
+
+
 app.MapGet("api/financial-records", () => 
       new FinancialRecord {
         //dummy obj
